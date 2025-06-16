@@ -23,15 +23,14 @@
         </ul>
     </header>
     <!-- Slider main container -->
-    <div class="swiper"> <!-- swiper class 會被 new Swiper('.swiper' 使用 -->
-        <div class="swiper-wrapper"> <!-- 讓Swiper知道要輪播的內容位置必須為 swiper-wrapper -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
             <div class="swiper-slide">Page 1</div>
             <div class="swiper-slide">Page 2</div>
             <div class="swiper-slide">Page 3</div>
         </div>
     
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div> <!-- 頁籤 -->
     </div>
 
 
@@ -41,15 +40,15 @@
     <!-- swiper套件 -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', { // 創建一個輪播
-            autoplay: { // 自動輪播 swiper
-                delay: 2 * 1000, // 每兩秒切換下一張
+        const swiper = new Swiper('.swiper', {
+            pagination: { // 使用頁籤方法
+                el: ".swiper-pagination", // 找到class為swiper-pagination的標籤
+                dynamicBullets: true, // 是否使用動畫
             },
-            loop: true, // 輪播結束後回到第一張繼續輪播
-            navigation: { // 前一張、下一張按鈕
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+            // autoplay: { // 自動輪播 swiper
+            //     delay: 2 * 1000, // 每兩秒切換下一張
+            // },
+            //  loop: true,
         });
     </script>
     

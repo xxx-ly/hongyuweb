@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+*{
+	font-family: Arial, Helvetica, 'LiHei Pro', '微軟正黑體', 'SimHei', sans-serif;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+	-webkit-text-size-adjust: none;
+}
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+em,
+img,
+tt,
+b,
+i,
+ol,
+ul,
+li,
+form,
+label,
+caption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	list-style: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	color: #2b2b2b;
+	touch-action: manipulation;
+	font-size: 14px;
+}
+
+iframe{
+	display: block;
+}
+
+*:hover,
+*:focus,
+*:active {
+	outline: none!important;
+	-moz-outline: none!important;
+	-webkit-tap-highlight-color: transparent;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+input[type="password"]::-webkit-textfield-decoration-container {
+	visibility: hidden;
+}
+
+input,
+button,
+select,
+textarea {
+	font-family: Arial, Helvetica, 'LiHei Pro', '微軟正黑體', 'SimHei', sans-serif;
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	resize: none;
+	font-size: 14px;
+}
+
+input::-ms-clear,
+input::-ms-reveal,
+select::-ms-expand{
+	display: none;
+}
+.nofloat:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+img{
+	display: block;
+	height: auto;
+	vertical-align: middle;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+tt {
+	font-family: Arial, Helvetica, 'LiHei Pro', '微軟正黑體', 'SimHei', sans-serif;
+}
+
+::-webkit-scrollbar{ 
+	width:8px;
+	height:8px;
+	background-color:hsl(0, 0%, 90%);
+}
+::-webkit-scrollbar-thumb { 
+	background-color:hsl(203, 39%, 55%);
+	border: 2px hsl(0, 0%, 90%) solid;
+	border-radius:8px;
+	cursor:pointer;
+	-webkit-transition:background .5s linear;
+	transition:background .5s linear;
+} 
+*:hover::-webkit-scrollbar-thumb{
+	background-color:hsl(203, 39%, 45%);
+}
+::-webkit-scrollbar-corner {
+	background-color:hsl(0, 0%, 90%);
+}

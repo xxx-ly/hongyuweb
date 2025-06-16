@@ -1,0 +1,37 @@
+$bg_color:(
+    primary:#3C3C3C,
+    second:#007ACC,
+    body_bg:#F4F4F4,
+);
+
+$txt_color:(
+    black:#000000,
+
+);
+
+//按鈕顏色
+$btn_color:(
+    blue:#3c5971,
+    lightblue:#83aec9,
+    purple:#4d2d52,
+    lightpurple:#88708f,
+    green:#27a67b,
+    red:#d9534f,
+    orange:#FF9800,
+    gray:#999,
+    clean:#ff0000,
+);
+
+//背景顏色
+@each $name, $background in $bg_color{
+	.bg_#{$name}{
+		background:$background !important; 
+	}
+}
+
+//字體顏色
+@each $name, $value in $txt_color{
+	.txt_#{$name} {
+		color:$value !important;
+	}
+}

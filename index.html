@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/all.min.css">
+    <!-- swiper套件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- AOS套件 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="description" content="弘宇精密工業有限公司專注於 CNC 精密加工、金屬零件代工與客製化製造，提供快速打樣與穩定量產，是您信賴的夥伴。"/>
+    <title>專業 CNC 精密加工 | 金屬零件代工服務｜弘宇精密工業有限公司</title>
+
+
+</head>
+<body>
+    <header>
+        <h1 class="logo"></h1>
+        <ul class="">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </header>
+    <!-- Slider main container -->
+    <div class="swiper"> <!-- swiper class 會被 new Swiper('.swiper' 使用 -->
+        <div class="swiper-wrapper"> <!-- 讓Swiper知道要輪播的內容位置必須為 swiper-wrapper -->
+            <div class="swiper-slide">Page 1</div>
+            <div class="swiper-slide">Page 2</div>
+            <div class="swiper-slide">Page 3</div>
+        </div>
+    
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+
+
+
+    
+    <!-- swiper套件 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', { // 創建一個輪播
+            autoplay: { // 自動輪播 swiper
+                delay: 2 * 1000, // 每兩秒切換下一張
+            },
+            loop: true, // 輪播結束後回到第一張繼續輪播
+            navigation: { // 前一張、下一張按鈕
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    
+    <!-- AOS套件 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

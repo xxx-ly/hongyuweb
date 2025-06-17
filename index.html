@@ -14,26 +14,74 @@
 
 </head>
 <body>
-    <header>
-        <h1 class="logo"></h1>
-        <ul class="">
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </header>
-    <!-- Slider main container -->
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">Page 1</div>
-            <div class="swiper-slide">Page 2</div>
-            <div class="swiper-slide">Page 3</div>
+    <div class="container">
+        <header>
+            <section class="content">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="/image/hongyu_cnc_logo-1.png" alt="弘宇精密工業有限公司">
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="meun">
+                    <li><a href="#">關於公司</a></li>
+                    <li><a href="#">產品介紹</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+                </nav>
+            </section>
+        </header>
+        <!-- banner -->
+        <section class="content">
+            <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide --pic1"></div>
+                <div class="swiper-slide --pic2"></div>
+                <div class="swiper-slide --pic3"></div>
+            </div>
+        
+            <div class="swiper-pagination"></div>
         </div>
-    
-        <div class="swiper-pagination"></div> <!-- 頁籤 -->
+        </section>
+        <!-- 關於我們 -->
+        <section data-aos="fade-up" class="--about">
+            <div class="content about">
+                <h2>關於我們</h2>
+                <article>
+                    峰順科技股份有限公司從事專業精密零件加工製造，加工領域為自行車零組件、傳動類零件、電子及光學產業零件、五金零件、客製化零件等精密加工。廠內設備機種齊全，且為增進加工精度及生產效率...
+                </article>
+                <button>MORE</button>
+            </div>
+        </section>
+        <!-- 產品展示 -->
+        <section class="--product">
+            <ul class="content product">
+                <li class="product__item">
+                    <a href="#" class="product__item__pic"></a>
+                    <h3 class="product__item__txt">產品名稱</h3>
+                </li>
+                <li class="product__item">
+                    <a href="#" class="product__item__pic"></a>
+                    <h3 class="product__item__txt">產品名稱</h3>
+                </li>
+                <li class="product__item">
+                    <a href="#" class="product__item__pic"></a>
+                    <h3 class="product__item__txt">產品名稱</h3>
+                </li>
+                <li class="product__item">
+                    <a href="#" class="product__item__pic"></a>
+                    <h3 class="product__item__txt">產品名稱</h3>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <ul class="footer content">
+                <li class="footer__top"></li>
+                <li class="footer__bottom"></li>
+            </ul>
+        </footer>
     </div>
-
-
 
 
     
@@ -45,10 +93,10 @@
                 el: ".swiper-pagination", // 找到class為swiper-pagination的標籤
                 dynamicBullets: true, // 是否使用動畫
             },
-            // autoplay: { // 自動輪播 swiper
-            //     delay: 2 * 1000, // 每兩秒切換下一張
-            // },
-            //  loop: true,
+            autoplay: { // 自動輪播 swiper
+                delay: 2 * 1000, // 每兩秒切換下一張
+            },
+            loop: true,
         });
     </script>
     

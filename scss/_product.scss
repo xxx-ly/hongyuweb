@@ -1,0 +1,19 @@
+.productmain{
+    @include d_f(flex,flex-start,space-between);
+    padding: 100px 0;
+
+    &__sidemenu{
+        li{
+            @extend %hand;
+            padding: 10px 20px 10px 30px;
+            background: map-get($bg_color , second);
+            color:map-get($txt_color , white);
+            letter-spacing: 1px;
+
+            @include hoverHandler{
+                background: map-get($bg_color , gray);
+            }
+        }
+        li+li{margin-top: 10px;}
+    }
+}

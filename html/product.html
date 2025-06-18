@@ -10,11 +10,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="description" content="弘宇精密工業有限公司專注於 CNC 精密加工、金屬零件代工與客製化製造，提供快速打樣與穩定量產，是您信賴的夥伴。"/>
     <title>弘宇精密工業有限公司 | 專業 CNC 精密加工｜金屬零件代工服務</title>
-
 </head>
 <body>
     <div class="container">
         <header id="common-header"></header>
+
         <!-- banner -->
         <section class="content">
             <div class="swiper">
@@ -27,52 +27,36 @@
             <div class="swiper-pagination"></div>
         </div>
         </section>
-        <!-- 關於我們 -->
-        <section data-aos="fade-up" class="--about">
-            <div class="content about">
-                <h2>關於我們</h2>
-                <article>
-                    弘宇精密工業有限公司從事專業精密零件加工製造，加工領域為自行車零組件、傳動類零件、電子及光學產業零件、五金零件、客製化零件等精密加工。廠內設備機種齊全，且為增進加工精度及生產效率...
-                </article>
-                <button>MORE</button>
-            </div>
-        </section>
-        <!-- 產品展示 -->
-        <section class="--product">
-            <ul data-aos="zoom-in"  class="content product">
-                <li class="product__item">
-                    <a href="#" class="product__item__pic"></a>
-                    <h3 class="product__item__txt">產品名稱</h3>
-                </li>
-                <li class="product__item">
-                    <a href="#" class="product__item__pic"></a>
-                    <h3 class="product__item__txt">產品名稱</h3>
-                </li>
-                <li class="product__item">
-                    <a href="#" class="product__item__pic"></a>
-                    <h3 class="product__item__txt">產品名稱</h3>
-                </li>
-                <li class="product__item">
-                    <a href="#" class="product__item__pic"></a>
-                    <h3 class="product__item__txt">產品名稱</h3>
-                </li>
-            </ul>
-        </section>
 
+        <section class="content">
+            <div class="productmain">
+                <ul class="productmain__sidemenu">
+                    <li>電子自動化設備零件加工</li>
+                    <li>光電半導體設備零件加工</li>
+                    <li>各種工程塑膠加工</li>
+                    <li>各種金屬加工</li>
+                </ul>
+                <div class="productmain__content">
+
+                </div>
+            </div>
+
+        </section>
         <footer id="common-footer"></footer>
     </div>
 
 
-    <!-- 通用區塊 -->
+
+        <!-- 通用區塊 -->
     <script>
-        fetch('/html/header.html')
+        fetch('header.html')
         .then(res => res.text())
         .then(html => {
             document.getElementById('common-header').innerHTML = html;
         });
     </script>
     <script>
-        fetch('/html/footer.html')
+        fetch('footer.html')
         .then(res => res.text())
         .then(html => {
             document.getElementById('common-footer').innerHTML = html;
@@ -93,11 +77,11 @@
             loop: true,
         });
     </script>
+    
     <!-- AOS套件 -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
-
 </html>

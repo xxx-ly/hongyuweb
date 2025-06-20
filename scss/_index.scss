@@ -76,12 +76,14 @@ header{
 section.--about{
     margin-top: 50px;
     background: url(/image/about_bg.jpg)no-repeat center center /cover;
-    
+    padding: 100px 20px;
 }
 
 .about {
     text-align: center;
-    padding: 100px 20px;
+    padding: 10px 20px;
+    background:map-get($bg_color , whiteshadow);
+    border-radius: 10px;
 
     h2 {
         display: block;
@@ -95,20 +97,20 @@ section.--about{
         font-size: 16px;
         line-height: 20px;
         letter-spacing: 1px;
-        color:map-get($txt_color, white );
+        color:map-get($txt_color, primary );
         margin-bottom: 50px;
     }
 
     button{
         @extend %hand;
-        background: map-get($btn_color , gray);
+        background: map-get($btn_color , primary);
         color:map-get($txt_color , white);
         padding: 10px 0;
         width: 100px;
         border-radius: 50px;
 
         @include hoverHandler{
-            opacity: .8;
+            background: map-get($btn_color , gray);
         }
     }
 }

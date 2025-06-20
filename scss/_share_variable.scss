@@ -2,8 +2,14 @@ $bg_color:(
     primary:#3C3C3C,
     second:#007ACC,
     body_bg:#eeeeee,
+    blue:#0099FF,
+    lightgray:#f5f5f5,
+    bringgray:#B0B0B0,
     gray:#555555,
     grayblue:#D9E6F2,
+    white:#ffffff,
+    whiteshadow:#ffffffb1,
+    orange:#FF6F00,
 );
 
 $txt_color:(
@@ -17,7 +23,8 @@ $txt_color:(
 
 //按鈕顏色
 $btn_color:(
-    gray:#555,
+    primary:#3C3C3C,
+    gray:#222222,
 );
 
 //背景顏色

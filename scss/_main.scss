@@ -1,6 +1,6 @@
 .main{
     @include d_f(flex,flex-start,space-between);
-    padding: 100px 0;
+    padding: 100px 20px;
     //.main__sidemenu
     &__sidemenu{
         flex:none;
@@ -87,6 +87,21 @@
                 margin: 10px 0;
             }
         }
+        //.main__content__contact
+        &__contact{
+            li{
+                @include d_f(flex,flex-start,flex-start);
+                font-size:16px;
+                color: map-get($txt_color , primary);
+                font-weight: bolder;
+
+                @include hoverHandler {
+                    color: map-get($txt_color , second);
+                }
+            }
+            li + li{margin-top: 10px;}
+        }
+            
     }
 
     &.--about{
@@ -139,3 +154,4 @@
         }
     }
 }
+

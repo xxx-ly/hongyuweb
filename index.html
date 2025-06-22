@@ -6,15 +6,28 @@
     <link rel="stylesheet" href="style/all.min.css">
     <!-- swiper套件 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <!-- AOS套件 -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="description" content="弘宇精密工業有限公司專注於 CNC 精密加工、金屬零件代工與客製化製造，提供快速打樣與穩定量產，是您信賴的夥伴。"/>
     <title>弘宇精密工業有限公司 | 專業 CNC 精密加工｜金屬零件代工服務</title>
 
 </head>
 <body>
     <div class="container">
-        <header id="common-header"></header>
+        <header>
+            <section class="content">
+                <h1 class="logo">
+                    <a href="../index.html">
+                        <img src="/image/hongyu_cnc_logo-1.png" alt="弘宇精密工業有限公司">
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="meun">
+                    <li><a href="/html/about.html">關於我們</a></li>
+                    <li><a href="/html/product.html">產品介紹</a></li>
+                    <li><a href="/html/contact.html">聯絡我們</a></li>
+                </ul>
+                </nav>
+            </section>
+        </header>
         <!-- banner -->
         <section class="content">
             <div class="swiper">
@@ -28,7 +41,7 @@
         </div>
         </section>
         <!-- 關於我們 -->
-        <section data-aos="fade-up" class="--about">
+        <section class="--about">
             <div class="content about">
                 <h2>關於我們</h2>
                 <article>
@@ -39,7 +52,7 @@
         </section>
         <!-- 產品展示 -->
         <section class="--product">
-            <ul data-aos="zoom-in"  class="content product">
+            <ul class="content product">
                 <li class="product__item">
                     <a href="html/product.html" class="product__item__pic"></a>
                     <h3 class="product__item__txt">電子自動化設備零件加工</h3>
@@ -59,26 +72,40 @@
             </ul>
         </section>
 
-        <footer id="common-footer"></footer>
+        <footer>
+            <ul class="footer content">
+                <li class="footer__left">
+                    <a href="tel:+04-25367929" class="tel">04-25367929</a>
+                    <div class="footer__left__item --mail">
+                        <a href="mailto:hong.yu@msa.hinet.net">E-mail：hong.yu@msa.hinet.net</a>
+                    </div>
+                    <div class="footer__left__item --phone">
+                        <a href="tel:+04-25367923">傳真：04-25367923</a>
+                    </div>
+                    <div class="footer__left__item --address">
+                        <a href="https://www.google.com/maps/search/?api=1&query=台中市潭子區環中東路一段397巷5號"
+                            target="_blank">地址：台中市潭子區環中東路一段397巷5號</a>
+                    </div>
+                </li>
+                <li class="footer__mid">
+                    <ul class="footer__mid__list">
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="product.html">產品介紹</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
+                        <li>免責聲明</li>
+                    </ul>
+                </li>
+                <li class="footer__right">
+                    <div class="line">
+                        <h3>LINE ID：112233</h3>
+                        <i class="line__pic"></i>
+                    </div>
+                </li>
+            </ul>
+        </footer>
     </div>
 
 
-    <!-- 通用區塊 -->
-    <script>
-        fetch('html/header.html')
-        .then(res => res.text())
-        .then(html => {
-            document.getElementById('common-header').innerHTML = html;
-        });
-    </script>
-    <script>
-        fetch('html/footer.html')
-        .then(res => res.text())
-        .then(html => {
-            document.getElementById('common-footer').innerHTML = html;
-        });
-    </script>
-    <!-- 通用區塊 -->
     <!-- swiper套件 -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -92,11 +119,6 @@
             },
             loop: true,
         });
-    </script>
-    <!-- AOS套件 -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
     </script>
 </body>
 

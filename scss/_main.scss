@@ -19,7 +19,7 @@
                 display: inline-block;
                 width: 15px;
                 height: 15px;
-                background: url(/image/icon/icon_wrench.svg)no-repeat center center/contain;
+                background: url(../image/icon/icon_wrench.svg)no-repeat center center/contain;
                 margin-right: 10px;
             }
 
@@ -134,7 +134,7 @@
             li{
                 background: map-get($bg_color , orange);
                 &::before{
-                    background: url(/image/icon/icon_building.svg)no-repeat center center/contain;
+                    background: url(../image/icon/icon_building.svg)no-repeat center center/contain;
                 }
                 &::after{
                     background: map-get($bg_color , blue);
@@ -166,7 +166,7 @@
         &__pic{
             width: 100%;
             height: 150px;
-            background: url(/image/product-01.jpg)no-repeat center center/cover;
+            background: url(../image/product-01.jpg)no-repeat center center/cover;
             margin-bottom: 20px;
             border-bottom: 2px dotted map-get($bg_color , bringgray);
         }  

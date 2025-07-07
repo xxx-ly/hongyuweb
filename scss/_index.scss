@@ -299,13 +299,13 @@ footer{
                     margin-right:10px;
                 }
                 &.--mail::before{
-                    background: url(/image/icon/icon_mail.svg)no-repeat center center/contain;
+                    background: url(../image/icon/icon_mail.svg)no-repeat center center/contain;
                 }
                 &.--phone::before{
-                    background: url(/image/icon/icon_phone.svg)no-repeat center center/contain;
+                    background: url(../image/icon/icon_phone.svg)no-repeat center center/contain;
                 }
                 &.--address::before{
-                    background: url(/image/icon/icon_house.svg)no-repeat center center/contain;
+                    background: url(../image/icon/icon_house.svg)no-repeat center center/contain;
                 }
 
                 @include hoverHandler {
@@ -344,7 +344,7 @@ footer{
                     display: inline-block;
                     width: 100px;
                     height: 100px;
-                    background: url(/image/line.jpg)no-repeat center center/contain;
+                    background: url(../image/line.jpg)no-repeat center center/contain;
 
                     @include hoverHandler {
                         box-shadow: 0 0 4px 0 map-get($bg_color , body_bg);

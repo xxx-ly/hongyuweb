@@ -113,6 +113,9 @@ header{
 .banner{
     .content{
         text-align: center;
+        width: 100%;
+        height: 300px;
+        background: url(../image/banner.jpg)no-repeat center center / contain;
         h2{
             font-size: 80px;
             font-weight: bolder;
@@ -125,13 +128,16 @@ header{
             color: map-get($txt_color, second);
             letter-spacing: 5px;
         }
+
+        @include mw_md {
+            height: 150px;
+            h2 {font-size: 50px;}
+            h3 {font-size: 36px;}
+        }
         @include mw_xs {
-            h2{
-                font-size: 30px;
-            }
-            h3{
-                font-size: 24px;
-            }
+            height: 100px;
+            h2{font-size: 30px; }
+            h3{font-size: 24px;}
         }
     }
 }
@@ -222,8 +228,11 @@ section.--product{
         background: url(../image/cnc_metal.jpg)no-repeat center center/contain;
         margin-bottom: 50px;
 
-        @include mw_xs{
+        @include mw_md {
             height: 300px;
+        }
+        @include mw_xs{
+            height: 150px;
         }
     }
 }

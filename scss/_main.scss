@@ -82,7 +82,7 @@
             color: map-get($txt_color , white);
             padding: 10px;
             background: linear-gradient( to right ,map-get($txt_color , gray)60%, map-get($bg_color , body_bg));
-            margin-bottom: 50px;
+            margin-bottom: 25px;
         }
         //.main__content__pic
         &__pic{
@@ -108,7 +108,8 @@
                 font-size:16px;
                 color: map-get($txt_color , primary);
                 font-weight: bolder;
-
+                border-bottom: 1px solid map-get($bg_color , primary);
+                padding-bottom: 5px;
                 @include hoverHandler {
                     color: map-get($txt_color , second);
                 }

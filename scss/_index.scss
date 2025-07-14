@@ -118,13 +118,13 @@ header{
         width: 100%;
         height: 300px;
         background: url(../image/banner.jpg)no-repeat center center / contain;
-        h2{
+        h1{
             font-size: 80px;
             font-weight: bolder;
             color:map-get($txt_color, primary);
             letter-spacing: 5px;
         }   
-        h3{
+        h2{
             font-size: 40px;
             font-weight: bolder;
             color: map-get($txt_color, second);
@@ -134,26 +134,32 @@ header{
 
         @include mw_md {
             height: 220px;
-            h2 {font-size: 50px;}
-            h3 {font-size: 30px;}
+            h1 {font-size: 50px;}
+            h2 {font-size: 30px;}
         }
         @include mw_xs {
             height: 120px;
-            h2{font-size: 30px; }
-            h3{font-size: 14px;}
+            h1{font-size: 30px; }
+            h2{font-size: 14px;}
         }
     }
 }
 
 //關於我們區塊
 section.--about{
+    position: relative;
     background:url(../image/about_bg.jpg)no-repeat center center /cover;
+    // background: map-get($bg_color , second);
     padding: 100px 20px;
     margin:50px 0 100px;
     @include mw_xs{
         padding: 50px 10px;
         margin:30px 0 50px;
     }
+}
+.pic_info {
+    @include pos_a(br, 0);
+    color: map-get($txt_color , white);
 }
 
 .about{
@@ -235,7 +241,7 @@ section.--product{
             height: 300px;
         }
         @include mw_xs{
-            height: 150px;
+            height: 200px;
         }
     }
 }
@@ -337,6 +343,7 @@ footer{
         }
         //.footer__right
         &__right{
+            padding-right: 60px;
             .line{
                 text-align: center;
 

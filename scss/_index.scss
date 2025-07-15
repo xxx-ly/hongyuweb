@@ -232,16 +232,12 @@ section.--product{
     }
     .product_pic{
         width: 100%;
-        height: 500px;
-        background: url(../image/cnc_metal.jpg)no-repeat center center/contain;
+        padding: 0 10px;
         margin-bottom: 50px;
+        img{
+            width: 100%;
+        }
 
-        @include mw_md {
-            height: 300px;
-        }
-        @include mw_xs{
-            height: 200px;
-        }
     }
 }
 .product{

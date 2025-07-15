@@ -149,7 +149,6 @@ header{
 section.--about{
     position: relative;
     background:url(../image/about_bg.jpg)no-repeat center center /cover;
-    // background: map-get($bg_color , second);
     padding: 100px 20px;
     margin:50px 0 100px;
     @include mw_xs{

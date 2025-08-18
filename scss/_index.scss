@@ -138,7 +138,7 @@ header{
             h2 {font-size: 30px;}
         }
         @include mw_xs {
-            height: 120px;
+            height: 200px;
             h1{font-size: 40px; }
             h2{font-size: 14px;}
         }
@@ -317,7 +317,7 @@ footer{
                 }
 
                 @include mw_md {
-                    font-size: 18px;
+                    font-size: 16px;
                 }
             }
             .footer__left__item+.footer__left__item {margin-top: 10px;}

@@ -138,9 +138,9 @@ header{
             h2 {font-size: 30px;}
         }
         @include mw_xs {
-            height: 180px;
+            height: 140px;
             background-position: center bottom;
-            h1{font-size: 40px; }
+            h1{font-size: 32px; }
             h2{font-size: 14px;}
         }
     }

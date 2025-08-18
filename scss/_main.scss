@@ -105,21 +105,26 @@
         &__contact{
             li{
                 @include d_f(flex,flex-start,flex-start);
-                font-size:16px;
+                font-size:24px;
                 color: map-get($txt_color , primary);
                 font-weight: bolder;
                 border-bottom: 1px solid map-get($bg_color , primary);
                 padding-bottom: 5px;
+
                 @include hoverHandler {
                     color: map-get($txt_color , second);
                 }
             }
             li + li{margin-top: 10px;}
+
+            @include mw_md {
+                li{font-size: 18px;}
+            }
         }
         @include mw_md{
             width: 100%;
             &__title{
-                font-size: 20px;
+                font-size: 24px;
                 text-align: center;
                 margin-bottom: 20px;
             }

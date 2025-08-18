@@ -65,7 +65,7 @@ header{
             padding: 10px 15px;
             background: map-get($btn_color , orange);
             color: map-get($txt_color , white);
-            font-size: 16px;
+            font-size: 24px;
             border-radius: 50px;
             overflow: hidden;
 
@@ -87,9 +87,9 @@ header{
                 background: map-get($btn_color , gray);
             }
 
-            @include mw_xs {
+            @include mw_md {
                 padding: 5px 10px;
-                font-size: 14px;
+                font-size: 20px;
             }
         }
     }
@@ -102,14 +102,14 @@ header{
 
 .index_tittle{
     display: block;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bolder;
     margin-bottom: 20px;
     color: map-get($txt_color , second);
     text-align: center;
 
     @include mw_xs {
-        font-size: 20px;
+        font-size: 30px;
     }
 }
 .banner{
@@ -139,7 +139,7 @@ header{
         }
         @include mw_xs {
             height: 120px;
-            h1{font-size: 30px; }
+            h1{font-size: 40px; }
             h2{font-size: 14px;}
         }
     }
@@ -168,14 +168,12 @@ section.--about{
     text-align: center;
     
     article {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 24px;
+        line-height: 28px;
         letter-spacing: 1px;
         color:map-get($txt_color, primary );
         margin-bottom: 50px;
         @include mw_xs{
-            font-size: 14px;
-            line-height: 18px;
             margin-bottom: 20px;
         }
     }
@@ -187,11 +185,12 @@ section.--about{
         padding: 10px 0;
         width: 100px;
         border-radius: 50px;
-
+        font-size: 24px;
         @include hoverHandler{
             background: map-get($btn_color , gray);
         }
     }
+
 }
 section.--product{
     .list{
@@ -225,7 +224,7 @@ section.--product{
         @include mw_xs{
             margin-bottom: 50px;
             li{
-                font-size: 16px;
+                font-size: 24px;
                 padding: 10px;
             }
         }
@@ -295,6 +294,7 @@ footer{
             //.footer__left__item
             &__item{
                 @include d_f(flex,center,flex-start);
+                font-size: 24px;
                 &::before{
                     content:'';
                     display: block;
@@ -314,6 +314,10 @@ footer{
 
                 @include hoverHandler {
                     color: map-get($txt_color , second);
+                }
+
+                @include mw_md {
+                    font-size: 18px;
                 }
             }
             .footer__left__item+.footer__left__item {margin-top: 10px;}
